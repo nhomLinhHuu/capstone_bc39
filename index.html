@@ -75,7 +75,7 @@
     <section></section>
     <!-- end service -->
     <!-- END HUU NGUYEN -->
-
+    <button class="fixed-top" onclick="setDarkTheme()">Dark Theme</button>
     <!-- LINH PHAM -->
     <!-- stats -->
     <section class="service">
@@ -448,6 +448,25 @@
         });
     </script>
     <!-- end coutup -->
+    <!-- dark theme -->
+    <script>
+        let a = 2;
+        function setDarkTheme(){
+            if(a%2==0){
+                document.documentElement.style.setProperty("--bg-color","#232220");
+                document.documentElement.style.setProperty("--heading-color","#fff");
+                document.documentElement.style.setProperty("--font-color","#a5a2a1");
+                
+                console.log(a);
+
+            }else{
+                document.documentElement.style.setProperty("--bg-color","#fff");
+                document.documentElement.style.setProperty("--heading-color","#232121");
+                document.documentElement.style.setProperty("--font-color","#a5a2a1");
+            }
+            a++;
+        }
+    </script>
     <!-- END SCRIPT BY LINH PHAM -->
 </body>
 
