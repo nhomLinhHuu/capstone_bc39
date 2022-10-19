@@ -116,7 +116,9 @@ h3 {
     width: 80%;
     margin: auto;
 }
-
+.input-header {
+    background-color: var(--bg-color)!important;
+}
 
 .banner__header{
     display: flex;
@@ -208,12 +210,13 @@ h3 {
 
 /* About us */
  .about__us{
-    background-color: white;
+    background-color: var(--bg-color);
     color: black;
 }
 .about__us .about__container{
     width: 100%;
     margin: auto;
+   
 }
 .about__us .about__content{
     display: flex;
@@ -240,6 +243,7 @@ h3 {
 /* book */
 .book{
     color: var(--primary-color);
+    overflow: hidden;
 }
 .bool__left{
     width: 100%;
@@ -326,7 +330,7 @@ h3 {
 
 /* categori */
 .categori{
-    background-color: #f7f7f7;
+    background-color: var(--bg-color);
 }
 .categori__container{
     margin: auto;
@@ -334,6 +338,7 @@ h3 {
 .categori__content{
     width: 80%;
     margin: auto;
+    
 }
 .categori__title{
     margin-top: 5rem;
@@ -402,7 +407,7 @@ h3 {
 
 /* food */
 .food{
-    background-color: #fefefe;
+    background-color: var(--bg-color);
 }
 .food__container{
     width: 100%;
@@ -417,7 +422,7 @@ h3 {
     padding: 20px 20px;
     border: 1px solid #c2d0da43;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: var(--bg-color);
     box-shadow: 2px 2px rgba(255, 255, 255, 0.641);
 }
 .item__content{
@@ -440,7 +445,7 @@ h3 {
     font-size: 25px;
     line-height: 70px;
     width: 100px;
-    background-color: #f9f8ff;
+    background-color: var(--bg-color);
     display: flex;
     justify-content: center;
     border-radius: 5px;
@@ -663,6 +668,7 @@ h3 {
     background-image: url(../image/banner3.jpg);
     background-size: cover;
     background-position: center;
+    margin-bottom: 100px;
 
 }
 
@@ -747,6 +753,7 @@ h3 {
 /* Blog posts */
 .blog-posts {
     background-color: var(--bg-grey);
+    padding-top: 100px !important;
 }
 .blog-posts .card {
     background-color: var(--bg-grey);
@@ -781,11 +788,16 @@ h3 {
 .blog-posts .control-card {
     position: relative;
 }
-.blog-posts>h3 {
+/* .blog-spost .card-body>a {
+    color: red !important;
+} */
+.blog-posts .container>h3 {
     color: var(--font-color)!important;
+    font-size: 2em;
+    /* color: red!important; */
 }
 .blog-posts a {
-    color: var(--heading-color);
+    color: var(--font-color);
     font-weight: 700 !important;
 }
 
@@ -819,6 +831,7 @@ h3 {
 .testimonial {
     padding-bottom: 80px;
     padding-top: 50px;
+    
 
 }
 
@@ -832,10 +845,13 @@ h3 {
 .testimonial .swiper>h3 {
     color: #000;
     font-weight: 600;
+    color: var(--font-color);
     font-size: 2.3rem;
 
 }
-
+.testimonial .name {
+    color: var(--font-color);
+}
 .testimonial .swiper-slide img {
     width: 85px;
     height: 85px;
@@ -845,7 +861,7 @@ h3 {
 .testimonial .swiper-slide blockquote>p {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #000;
+    color: var(--font-color);
 
 }
 
@@ -876,13 +892,13 @@ footer {
 }
 
 footer h2>a {
-    color: var(--bg-color);
+    color: var(--font-color);
     font-weight: 700;
     font-size: 1.2rem;
 }
 
 footer h6 {
-    color: var(--bg-color);
+    color: var(--font-color);
     font-weight: 700;
     font-size: 1.2rem;
 }
@@ -931,6 +947,7 @@ footer p>a:hover {
 
 footer form input[type="email"] {
     display: block;
+    background-color: var(--bg-color);
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -959,6 +976,8 @@ footer form input[type="submit"] {
 footer form input[type="submit"]:hover {
     opacity: 0.8;
 }
-
+/* footer .input-footer {
+    background-color: var(--bg-color);
+} */
 /* end footer */
 /* END CSS BY LINH PHAM */
