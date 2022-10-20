@@ -2,9 +2,10 @@
 :root {
     --primary-color: #ff6600;
     --secondary-color: #ffc600;
-    --font-color: #a5a2a1;
-    --bg-color: #fff;
     --heading-color: #232121;
+    --font-color: #a5a2a1;
+
+    --bg-color: #fff;
     --border-radius: 10px;
     --border-color: #ddd;
     --border-light: #f0f3f0;
@@ -35,9 +36,13 @@ a:hover {
 }
 
 h3 {
-    color: #000;
+    color: var(--heading-color);
     font-weight: 600;
 
+}
+ h2, h3, h4, h5 {
+    color: var(--heading-color);
+    font-size: 1.2rem I;
 }
 
 /* end GLOBAL */
@@ -180,14 +185,14 @@ h3 {
     color: white;
     max-width: 600px;
     text-align: left;
-    margin-top: 100px;
+    margin-top: 80px;
     line-height: 40px;
 }
 .banner__info h1{
     font-size: 44px;
     line-height: 56px;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 600;
 
 }
 .banner__info p {
@@ -199,13 +204,14 @@ h3 {
     border: 2px solid #fff;
     color: #fff;
     padding: 12px 45px;
+    /* padding-top: 50px; */
     font-size: 16px;
     line-height: 30px;
     font-weight: 700;
     transition: 0.3s ease-in;
     border-radius: var(--border-radius);
     border-radius: 5px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 /* About us */
@@ -223,7 +229,7 @@ h3 {
 
 }
 .about__us .about__title h4{
-    color: var(--primary-color);
+    color: var(--heading-color);
     font-style: italic;
     font: 'Pacifico', cursive;
     font-weight: 600;
@@ -231,13 +237,14 @@ h3 {
 .about__us .about__title h3{
     font-size: 2.3rem;
     line-height: 40px;
-    font-weight: 600;
+    font-weight: 600!important;
+    color: var(--heading-color);
 }
 
 .about__us .about__body p{
     font-size: 18px;
     line-height: 28px;
-    color: #798288;
+    color: var(--font-color);
 }
 
 /* book */
@@ -260,7 +267,10 @@ h3 {
     background-color: var(--primary-color);
 }
 .bold{
-    color: black;
+    font-family: 'Pacifico', cursive;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+
 }
 .book__left__img::before{
     content: "";
@@ -285,6 +295,11 @@ h3 {
 .book__right{
     color: white;
 }
+.book .best:hover {
+    color: black;
+
+}
+
 .bestmeal{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -292,10 +307,13 @@ h3 {
 }
 
 .title-subhny{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-family: 'Pacifico', cursive;
 }
 .title-w3l{
     font-size: 2.5rem;
+    color: var(--heading-color);
+    
 }
 .readmore{
     font-size: 1.3rem;
@@ -330,7 +348,7 @@ h3 {
 
 /* categori */
 .categori{
-    background-color: var(--bg-color);
+    background-color: var(--bg-light);
 }
 .categori__container{
     margin: auto;
@@ -347,8 +365,13 @@ h3 {
     text-align: center;
 }
 .categori__title h4{
-    color: var(--primary-color);
+    color: var(--heading-color)!important;
     font-style: italic;
+}
+.categori__title h6 {
+    color: var(--primary-color)!important;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
 }
 
 .categori__menu {
@@ -360,6 +383,10 @@ h3 {
 .menu__info {
     opacity: 1;
     transition: all 0.4s;
+}
+.info h4 {
+    color: var(--heading-color);
+    font-weight: 600!important;
 }
 .categori__menu .menu__info{
     position: absolute;
@@ -389,9 +416,10 @@ h3 {
 
 .menu__info a h4{
     color: white;
+
 }
 .menu__info h5{
-    color: #e3b300;
+    color: var(--secondary-color);
 }
 .menu__img a::after{
     content: "";
@@ -412,7 +440,7 @@ h3 {
 .food__container{
     width: 100%;
     margin: auto;
-    color: #c2d0da;
+    color: var(--bg-color);
     padding: 5rem 5rem;
 }
 .food__item{
@@ -437,7 +465,7 @@ h3 {
     transition: all 0.8s;
 }
 .info:hover h4{
-    color: var(--primary-color);
+    color: var(--heading-color);
     cursor: pointer;
 }
 .icon i{
@@ -445,7 +473,7 @@ h3 {
     font-size: 25px;
     line-height: 70px;
     width: 100px;
-    background-color: var(--bg-color);
+    background-color: var(--bg-light);
     display: flex;
     justify-content: center;
     border-radius: 5px;
@@ -536,6 +564,7 @@ h3 {
 
 .stats-top h3 {
     font-size: 3rem !important;
+    color: var(--heading-color);
 }
 
 .stats-top::before {
@@ -731,9 +760,14 @@ h3 {
 
 .video .mfp-close {
     color: white !important;
+    background-color: white!important;
     font-size: 40px !important;
 }
-
+.mfp-close-btn-in .mfp-close{
+    color: white !important;
+    /* background-color: white!important; */
+    font-size: 40px !important;
+}
 @keyframes playButtonAnimate {
     0% {
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 25%),
@@ -752,16 +786,17 @@ h3 {
 
 /* Blog posts */
 .blog-posts {
-    background-color: var(--bg-grey);
+    background-color: var(--bg-light);
     padding-top: 100px !important;
+    padding-bottom: 100px;
 }
 .blog-posts .card {
-    background-color: var(--bg-grey);
+    background-color: transparent;
 }
 .blog-posts .reciepe {
     padding: 3px 20px;
     background-color: var(--primary-color);
-    color: var(--bg-color);
+    color: white;
     border-radius: 20px;
     font-weight: 700;
     font-size: 0.8rem;
@@ -792,12 +827,12 @@ h3 {
     color: red !important;
 } */
 .blog-posts .container>h3 {
-    color: var(--font-color)!important;
+    color: var(--heading-color);
     font-size: 2em;
     /* color: red!important; */
 }
 .blog-posts a {
-    color: var(--font-color);
+    color: var(--heading-color);
     font-weight: 700 !important;
 }
 
@@ -810,14 +845,14 @@ h3 {
 }
 
 .blog-posts h6 {
-    color: var(--primary-color) !important;
+    color: var(--primary-color)!important;
     font-family: 'Pacifico', cursive;
     font-size: 1.2rem;
 
 }
 
 .blog-spost h3 {
-    color: var(--font-color)!important;
+    color: var(--heading-color)!important;
 }
 
 @media only screen and (min-width:1200px) {
@@ -845,12 +880,12 @@ h3 {
 .testimonial .swiper>h3 {
     color: #000;
     font-weight: 600;
-    color: var(--font-color);
+    color: var(--heading-color);
     font-size: 2.3rem;
 
 }
 .testimonial .name {
-    color: var(--font-color);
+    color: var(--heading-color);
 }
 .testimonial .swiper-slide img {
     width: 85px;
@@ -861,7 +896,7 @@ h3 {
 .testimonial .swiper-slide blockquote>p {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--font-color);
+    color: var(--heading-color);
 
 }
 
@@ -892,16 +927,12 @@ footer {
 }
 
 footer h2>a {
-    color: var(--font-color);
+    color: white;
     font-weight: 700;
     font-size: 1.2rem;
 }
 
-footer h6 {
-    color: var(--font-color);
-    font-weight: 700;
-    font-size: 1.2rem;
-}
+
 
 footer ul {
     list-style: none;
@@ -927,13 +958,13 @@ footer .brand a:hover {
 }
 
 footer a {
-    color: var(--font-color);
+    color: white;
 }
 
 footer hr {
     width: 100%;
     border: 1px solid;
-    color: var(--bg-color);
+    color: white;
     opacity: 0.1;
 }
 
@@ -954,6 +985,7 @@ footer form input[type="email"] {
     transition: all 0.25s;
     border: 2px solid transparent;
     outline: none;
+    color: var(--font-color);
 }
 
 footer form input[type="email"]:focus {
@@ -975,6 +1007,14 @@ footer form input[type="submit"] {
 
 footer form input[type="submit"]:hover {
     opacity: 0.8;
+}
+
+
+footer h6 {
+    color: white;
+    font-weight: 700 !important;
+    font-size: 1.2rem !important;
+    font-family: 'Quicksand', sans-serif!important;
 }
 /* footer .input-footer {
     background-color: var(--bg-color);
