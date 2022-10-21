@@ -1,0 +1,20 @@
+{
+  "name": "capstone_bc39",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhomLinhHuu/capstone_bc39.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhomLinhHuu/capstone_bc39/issues"
+  },
+  "homepage": "https://github.com/nhomLinhHuu/capstone_bc39#readme"
+}
